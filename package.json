@@ -4,7 +4,8 @@
   "description": "Goalsetter app travesry media",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node backend/server.js",
+    "serve": "nodemon backend/server.js"
   },
   "repository": {
     "type": "git",
