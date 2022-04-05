@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/meisabikumar/MERN-goal-setter-app-traversy/issues"
   },
-  "homepage": "https://github.com/meisabikumar/MERN-goal-setter-app-traversy#readme"
+  "homepage": "https://github.com/meisabikumar/MERN-goal-setter-app-traversy#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
 }
