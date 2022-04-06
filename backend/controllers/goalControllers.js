@@ -5,7 +5,10 @@ const getGoals = (req, res) => {
 
 // @route  POST /api/goals
 const setGoal = (req, res) => {
-  res.status(200).json({ message: "Set goal !" });
+  if (!req.body.message) {
+    res.status(400).json({ message: "error" });
+  }
+  res.status(200).json(req.body);
 };
 
 // @route  PUT /api/goals/:id
