@@ -5,8 +5,9 @@ const getGoals = (req, res) => {
 
 // @route  POST /api/goals
 const setGoal = (req, res) => {
-  if (!req.body.message) {
-    res.status(400).json({ message: "error" });
+  if (!req.body.text) {
+    res.status(400);
+    throw new Error("something went wrong");
   }
   res.status(200).json(req.body);
 };
