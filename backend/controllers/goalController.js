@@ -51,7 +51,7 @@ const deleteGoals = asyncHandler(async (req, res) => {
 });
 
 module.exports = {
-  getGoals,
+  getGoals, 
   setGoal,
   updateGoals,
   deleteGoals,
