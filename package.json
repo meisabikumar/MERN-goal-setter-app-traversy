@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/meisabikumar/MERN-goal-setter-app-traversy#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "express-async-handler": "^1.2.0",
