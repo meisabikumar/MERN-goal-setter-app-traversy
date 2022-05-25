@@ -1,16 +1,15 @@
-const mongoose = require("mongoose"); // Erase if already required
+const mongoose = require("mongoose");
 
-// Declare the Schema of the Mongo model
-var goalSchema = new mongoose.Schema(
+const goalSchema = mongoose.Schema(
   {
     user: {
       type: mongoose.Schema.Types.ObjectId,
-      require: true,
+      required: true,
       ref: "User",
     },
     text: {
       type: String,
-      required: [true, "please add a text value"],
+      required: [true, "Please add a text value"],
     },
   },
   {
@@ -18,5 +17,4 @@ var goalSchema = new mongoose.Schema(
   }
 );
 
-//Export the model
-module.exports = mongoose.model("Goal ", goalSchema);
+module.exports = mongoose.model("Goal", goalSchema);

@@ -1,20 +1,19 @@
-const mongoose = require("mongoose"); // Erase if already required
+const mongoose = require("mongoose");
 
-// Declare the Schema of the Mongo model
-var userSchema = new mongoose.Schema(
+const userSchema = mongoose.Schema(
   {
     name: {
       type: String,
-      required: [true, "please add a name"],
+      required: [true, "Please add a name"],
     },
     email: {
       type: String,
-      required: [true, "please add an email"],
+      required: [true, "Please add an email"],
       unique: true,
     },
     password: {
       type: String,
-      required: [true, "please add a password"],
+      required: [true, "Please add a password"],
     },
   },
   {
@@ -22,5 +21,4 @@ var userSchema = new mongoose.Schema(
   }
 );
 
-//Export the model
-module.exports = mongoose.model("User ", userSchema);
+module.exports = mongoose.model("User", userSchema);
