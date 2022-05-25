@@ -6,7 +6,6 @@ import GoalItem from "../components/GoalItem";
 import Spinner from "../components/Spinner";
 import { getGoals, reset } from "../features/goals/goalSlice";
 
-
 function Dashboard() {
   const navigate = useNavigate();
   const dispatch = useDispatch();

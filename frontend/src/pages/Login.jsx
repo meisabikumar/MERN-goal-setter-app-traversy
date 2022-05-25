@@ -65,7 +65,7 @@ function Login() {
       <section className="form">
         <form onSubmit={onSubmit}>
           <div className="form-group">
-            <input type="email" className="form-control" id="email" name="email" placeholder="Enter your email" value={email} onChange={onChange} />
+            <input type="email" className="form-control" id="email" name="email" value={email} placeholder="Enter your email" onChange={onChange} />
           </div>
           <div className="form-group">
             <input
@@ -73,8 +73,8 @@ function Login() {
               className="form-control"
               id="password"
               name="password"
-              placeholder="Enter Password"
               value={password}
+              placeholder="Enter password"
               onChange={onChange}
             />
           </div>
