@@ -16,6 +16,8 @@ function Dashboard() {
   useEffect(() => {
     if (isError) {
       console.log(message);
+    }else {
+      dispatch(reset());
     }
 
     if (!user) {
